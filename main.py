@@ -1,11 +1,8 @@
-n = int(input())
-i = n % 10
-total = 0
-while n > 0:
-    num = n % 10
-    if i != num:
-        total += 1
-        print('NO')
-    n = n // 10
-if total == 0:
-    print('YES')
+# put your python code here
+a = int(input()) 
+s = []
+for i in range(0,a):
+  b,c = map(int, input().split())
+  sum = b + c
+  s.append(sum)    
+print('\n'.join(map(str, s)))
